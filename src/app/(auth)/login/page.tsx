@@ -8,7 +8,7 @@ import Input from "@/shared/Input/Input";
 const PageLogin = () => {
   return (
     <div
-      className="glass mt-10 h-max w-3/5 rounded-2xl bg-white/60 px-5 py-10"
+      className="glass mt-16 h-max rounded-2xl bg-white/60 p-10 sm:w-4/5 lg:w-1/2"
       data-nc-id="PageLogin"
     >
       <h2 className="mb-5 flex items-center justify-center text-2xl font-semibold leading-[115%] md:text-5xl md:leading-[115%]">
