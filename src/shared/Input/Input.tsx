@@ -1,5 +1,5 @@
-import type { InputHTMLAttributes } from 'react';
-import React from 'react';
+import type { InputHTMLAttributes } from "react";
+import React from "react";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   sizeClass?: string;
@@ -7,18 +7,17 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   rounded?: string;
 }
 
-// eslint-disable-next-line react/display-name
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
     {
-      className = '',
-      sizeClass = 'h-11 px-4 py-3',
-      fontClass = 'text-sm font-normal',
-      rounded = 'rounded-full',
-      type = 'text',
+      className = "",
+      sizeClass = "h-11 px-4 py-3",
+      fontClass = "text-sm font-normal",
+      rounded = "rounded-full",
+      type = "text",
       ...args
     },
-    ref,
+    ref
   ) => {
     return (
       <input
@@ -28,7 +27,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         {...args}
       />
     );
-  },
+  }
 );
 
 export default Input;
