@@ -27,17 +27,18 @@ const FAQtab = () => {
           </ButtonSecondary>
         ))}
       </div>
+      <div className="w-full border text-neutral-300" />
 
-      <div className="flex items-center justify-center p-5 md:p-10">
+      <div className="md:px-25 flex w-full items-center justify-center px-20 pb-20">
         {faqsData.faqs.map((faq) => (
           <div
             key={faq.category}
             className={`${
               activeTab === faq.category ? "block" : "hidden"
-            } max-w-3xl space-y-10`}
+            } w-full space-y-10`}
           >
             {faq.data.map((faqData) => (
-              <Accordion {...faqData} key={faqData.question} />
+              <Accordion {...faqData} key={faqData.question} wfull />
             ))}
           </div>
         ))}

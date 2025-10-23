@@ -17,7 +17,7 @@ export default function AuthLayout({
   return (
     <div className="container flex items-center justify-center">
       <Suspense fallback={<Loading />}>{children}</Suspense>
-      <div className="">
+      <div className="-z-10">
         <div className="absolute bottom-0 right-0 w-full overflow-hidden">
           <div className="animation-marquee w-max">
             <Image

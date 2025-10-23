@@ -1,5 +1,5 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "bus-ticket-booking-app",
   "version": "3.22.0",
   "scripts": {
     "dev": "next dev",

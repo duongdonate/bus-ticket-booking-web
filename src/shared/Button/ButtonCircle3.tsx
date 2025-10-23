@@ -8,7 +8,7 @@ export interface ButtonCircleProps
 
 const ButtonCircle3: React.FC<ButtonCircleProps> = ({
   className = "",
-  size = " ",
+  size = "",
   ...args
 }) => {
   return (
